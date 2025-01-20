@@ -1,5 +1,6 @@
 <?php
-include 'conexion.php';
+include '../php/conexion.php';
+
 
 // Verificar si se recibió el ID del contacto a eliminar
 if (isset($_GET['id'])) {
