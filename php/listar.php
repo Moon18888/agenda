@@ -1,4 +1,6 @@
 <?php
+include '../php/verificar_sesion.php'; // Verifica la sesión
+
 include '../php/conexion.php';
 
 $query = "SELECT * FROM contactos";

@@ -1,4 +1,5 @@
 <?php
+include '../php/verificar_sesion.php'; // Verifica la sesión
 include '../php/conexion.php';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {

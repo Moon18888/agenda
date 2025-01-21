@@ -1,4 +1,5 @@
 <?php
+
 $host = "localhost";
 $user = "root";
 $password = "Syntax2024_";
