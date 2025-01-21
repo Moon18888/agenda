@@ -1,13 +1,12 @@
 <?php
 include '../php/conexion.php';
 
+// Verificar si se recibió el email del contacto a eliminar
+if (isset($_GET['email'])) {
+    $email = $_GET['email'];
 
-// Verificar si se recibió el ID del contacto a eliminar
-if (isset($_GET['id'])) {
-    $id = $_GET['id'];
-
-    // Eliminar el contacto con el ID recibido
-    $query = "DELETE FROM contactos WHERE id = $id";
+    // Eliminar el contacto con el email recibido
+    $query = "DELETE FROM contactos WHERE email = '$email'";
     if ($conexion->query($query) === TRUE) {
         echo "Contacto eliminado correctamente.";
     } else {
@@ -21,4 +20,5 @@ if (isset($_GET['id'])) {
 
 $conexion->close();
 ?>
+
 

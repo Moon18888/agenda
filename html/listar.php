@@ -5,7 +5,7 @@
     <title>Lista de Contactos</title>
 </head>
 <body>
-    <h1>Lista de Contactos</h1>
+    
     <?php include '../php/listar.php'; ?>
 
 </body>
